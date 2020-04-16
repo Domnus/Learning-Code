@@ -12,10 +12,3 @@ for i in range(100, 1000):
     soma = c * d * u
     print(i, end = " - ")
     print(soma)
-
-        
-
-
-
-        
-
