@@ -10,7 +10,7 @@ while x:
     c = n % 10
     if a != b and  b!= c and a != c:
         x = False
-
+n = 359
 print(n)
 x = True
 
