@@ -8,11 +8,7 @@ print(L)
 
 print('Digite duas posições da lista: (0 a 49)')
 
-
-
-
 x = True
-
 while x:
         x = int(input('-> '))
         if x > 49 or x < 0:
