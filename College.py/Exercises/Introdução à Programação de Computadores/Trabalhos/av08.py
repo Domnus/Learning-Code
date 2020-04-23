@@ -23,10 +23,9 @@ while x:
                 if y < x:
                     print('O primeiro número deve ser menor que o segundo!')
                 else:
-                    while x <= y:
-                        i = L[x]
-                        l.append(i)
-                        x += 1
+                    for i in range(x, y+1):
+                        index = L[i]
+                        l.append(index)
                     x = False
     
 print(l)
