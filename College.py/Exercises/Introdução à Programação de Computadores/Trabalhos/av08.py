@@ -3,7 +3,7 @@ from random import randint
 L = []
 l = []
 for i in range(50):
-    L.append(randint(1, 100))
+    L.append(randint(1, 101))
 print(L)
 
 print('Digite duas posições da lista: (1 a 50)')
