@@ -10,6 +10,7 @@ while a < num:
   if num % a == 0:
     L1.append(a) 
   a += 1
+print()
 
 while b < num2:
   if num2 % b == 0:
@@ -18,3 +19,5 @@ while b < num2:
 for i in L1:
   if i in L2:
     print(i)
+
+print('Iagod')
