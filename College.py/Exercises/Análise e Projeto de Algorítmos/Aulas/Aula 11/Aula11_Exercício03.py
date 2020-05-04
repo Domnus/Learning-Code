@@ -4,17 +4,22 @@ A = []
 B = []
 C = []
 
-for i in range(10):
-    A.append(randint(1, 10))
+print('Informe os valores dos vetores A e B:')
 
+print('Vetor A:')
 for i in range(10):
-    B.append(randint(1, 10))
+    A.append(int(input('-> ')))
+
+print('Vetor B:')
+for i in range(10):
+    B.append(int(input('-> ')))
 
 
 for i in A:
     for j in B:
         if i == j:
-            C.append(i)
+            if i not in C or j not in C:
+                C.append(i)
 
 print(A)
 print(B)
