@@ -16,10 +16,8 @@ for i in range(10):
 
 
 for i in A:
-    for j in B:
-        if i == j:
-            if i not in C or j not in C:
-                C.append(i)
+    if i in B:
+        C.append(i)
 
 print(A)
 print(B)
