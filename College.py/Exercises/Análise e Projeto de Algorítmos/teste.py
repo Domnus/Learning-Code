@@ -1,25 +1,28 @@
-a = 0
-b = 0
-c = 0
-cond = True
-while cond:
-    player1 = int(input('Digite um valor '))
-    player2 = int(input('Digite um valor '))
-    player3 = int(input('Digite um valor '))
-    if player1 != player2 and player1!=player3:
-        a+=1
-    if player2!=player1 and player2!=player3:
-        b+=1
-    if player3!=player1 and player3!=player2:
-        c+=1
-    if a == 3:
-        print('O jogador A é o vencedor!')
-        cond = False
-    if b == 3:
-        print('O jogador B é o vencedor!')
-        cond = False
-    if c == 3:
-        print('O jogador C é o vencedor!')
-        cond = False
+from random import randint
+a = 'sim'
+L = []
+while a == 'sim':
+    for i in range(10):
+        L.append(randint(1,50))
+
+    print('Digite 1 para mostrar em ordem normal \nDigite 2 para mostrar em ordem inversa')
+
+    while True:
+        x = int(input('Digite o numero: '))
+        if x == 1:
+            print(L)
+            break
+        elif x == 2:
+            L.reverse()
+            print(L)
+            break
+        else:
+            print('Numero invalido')
+            continue
+
+    a = input('Deseja repetir? [Sim/Nao] ')
+    a = a.lower()
+    
+    
 
         
