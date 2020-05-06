@@ -22,7 +22,3 @@ while a == 'sim':
 
     a = input('Deseja repetir? [Sim/Nao] ')
     a = a.lower()
-    
-    
-
-        
