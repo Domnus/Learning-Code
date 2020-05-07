@@ -4,7 +4,6 @@ A = []
 B = []
 C = []
 i = 0
-y = True
 
 print('Digite os números desejados:')
 
