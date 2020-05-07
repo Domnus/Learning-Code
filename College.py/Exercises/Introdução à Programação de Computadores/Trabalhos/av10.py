@@ -38,6 +38,6 @@ elif len(C) == 5:
 elif len(C) == 6:
     print(f'Parabéns! Você acertou a sena! Esses foram os números que você acertou: \n{C}')
 elif len(C) == 0:
-    print('Infelimente você não acertou nenhum número! Mais sorte na próxima vez!')
+    print('Infelizmente você não acertou nenhum número! Mais sorte na próxima vez!')
 else:
     print(f'Você acertou {len(C)} número(s)! Aqui estão eles: \n{C}')
