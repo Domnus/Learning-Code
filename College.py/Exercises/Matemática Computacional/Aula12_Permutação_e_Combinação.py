@@ -1,7 +1,6 @@
 from math import factorial
 
 rep = []
-
 fact = 1
 
 C_ou_P = input('Combinação ou Permutação? ').upper()[0]
