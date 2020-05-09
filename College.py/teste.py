@@ -1,20 +1,29 @@
-num = int(input())
-a = 1
-num2 = int(input())
-b = 1
+from math import factorial
 
-L1 = []
-L2 = []
+rep = []
 
-while a < num:
-  if num % a == 0:
-    L1.append(a) 
-  a += 1
+fact = 1
 
-while b < num2:
-  if num2 % b == 0:
-    L2.append(b)
-  b += 1  
-for i in L1:
-  if i in L2:
-    print(i)
+C_ou_P = input('Combinação ou Permutação? ').upper()[0]
+
+if C_ou_P == 'C':
+    print('-----Combinação-----')
+    n = int(input('-> '))
+    r = int(input('-> '))
+    C = factorial(n) / (factorial(r) * factorial(n - r))
+elif C_ou_P == 'P':
+    print('-----Permutação-----')
+    n = int(input('-> '))
+    r = int(input('-> '))
+    if n > r:
+        C = factorial(n) / factorial(n - r)
+    elif n == r:
+        rep = input('Insira o número de repetições de elementos, separados por um espaço: ').split()
+        for i in range(len(rep)):
+          rep[i] = int(rep[i])
+        for i in rep:
+          fact *= factorial(i)
+          C = factorial(n) / fact         
+
+print(C)
+

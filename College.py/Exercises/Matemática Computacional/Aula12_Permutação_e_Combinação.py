@@ -1,7 +1,7 @@
 from math import factorial
 
-rep = {}
-k = 0
+rep = []
+
 fact = 1
 
 C_ou_P = input('Combinação ou Permutação? ').upper()[0]
@@ -18,18 +18,12 @@ elif C_ou_P == 'P':
     if n > r:
         C = factorial(n) / factorial(n - r)
     elif n == r:
-        while True:
-            print('Insira o número de repetições de elementos: ')
-            value = int(input('-> '))
-            key = k
-            rep[k] = value
-            x = input('Deseja adicionar mais números? [S/N]: ').upper()[0]
-            if x == 'N':
-                for i in rep:
-                    fact *= factorial(rep[i])
-                C = factorial(n) / fact 
-                break
-            else:
-                k += 1
+        rep = input('Insira o número de repetições de elementos, separados por um espaço: ').split()
+        for i in range(len(rep)):
+          rep[i] = int(rep[i])
+        for i in rep:
+          fact *= factorial(i)
+          C = factorial(n) / fact         
 
 print(C)
+
