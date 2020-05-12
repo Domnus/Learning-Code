@@ -1,7 +1,7 @@
 from random import randint
 matriz = [0] * 5
 x = []
-y = 4
+y = 1
 
 for i in range(5):
     matriz[i] = [0] * 5
@@ -11,17 +11,12 @@ for i in range(5):
 for i in matriz:
     print(i)
 
-print('Triângulo Superior Direito:')
+print('Triângulo Inferior Esquerdo:')
 
-for i in range(4):
-    for j in range(i + 1, 5):
+for i in range(1, 5):
+    for j in range(i):
         x.append(matriz[i][j])
         if len(x) == y:
-            y -= 1
             print(x)
             x = []
-            
-
-
-
-
+            y += 1

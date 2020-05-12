@@ -11,17 +11,15 @@ for i in range(5):
 for i in matriz:
     print(i)
 
-print('Triângulo Superior Direito:')
+print('Triângulo Superior Esquerdo:')
 
 for i in range(4):
-    for j in range(i + 1, 5):
+    for j in range(4 - i):
         x.append(matriz[i][j])
         if len(x) == y:
-            y -= 1
             print(x)
             x = []
-            
-
+            y -= 1
 
 
 
