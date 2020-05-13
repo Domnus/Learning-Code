@@ -9,6 +9,7 @@ for i in range(5):
 for i in matriz:
     print(i)
 
+print('Diagonal Secundária:')
 for i in range(5):
     print(matriz[i][4-i])
     

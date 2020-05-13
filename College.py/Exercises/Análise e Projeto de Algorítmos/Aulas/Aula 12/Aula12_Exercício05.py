@@ -14,6 +14,6 @@ print('Triângulo Inferior Direito:')
 
 for i in  range(1, 5):
     for j in range():
-        print(matriz[i][j], end = ' ')
+        print(matriz[j][i], end = ' ')
     print('\n')
 
