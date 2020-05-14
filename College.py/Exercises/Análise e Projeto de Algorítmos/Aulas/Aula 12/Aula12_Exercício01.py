@@ -17,6 +17,6 @@ for i in range(5):
         if j == 4 - i:
             print(f'[{matriz[i][4-i]}]', end='')
         else:
-            print('[x]', end='')
+            print('[=]', end='')
     print()
     
