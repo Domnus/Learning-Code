@@ -13,11 +13,6 @@ for i in matriz:
 print('Triângulo Inferior Direito:')
 
 for i in  range(1, 5):
-<<<<<<< HEAD
-    for j in range():
-        print(matriz[j][i], end = ' ')
-    print('\n')
-=======
     for j in range(5 - i, 5):
         x.append(matriz[i][j])
         if len(x) == y:
@@ -27,5 +22,5 @@ for i in  range(1, 5):
 
 
 
->>>>>>> 8c9e250080bb2509686da3fd1eade75d4479bece
+
 
