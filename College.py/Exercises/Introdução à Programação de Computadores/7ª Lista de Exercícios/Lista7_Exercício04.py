@@ -7,9 +7,9 @@ for i in range(10):
     for j in range(10):
         arr[i][j] = randint(1, 50)
 
-for i in arr:
-    i.sort()
-
+for i in range(10):
+    arr[i].sort()
+    
 print('=' * 45)
 print('Matriz:')
 print('=' * 45)

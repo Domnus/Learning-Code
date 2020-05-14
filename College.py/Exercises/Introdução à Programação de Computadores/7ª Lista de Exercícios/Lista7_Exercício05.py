@@ -18,8 +18,8 @@ for i in range(10):
             print(f'[{arr[i][j]}]', end= '')
     print()
 print('=' * 40)
-
-for i in range(10):
+''
+for i in range(0, 10):
     minm = arr[0][i]
     for j in range(10):
         if (arr[j][i] < minm):
@@ -27,6 +27,4 @@ for i in range(10):
     print(f' {i+1}ª coluna: {minm} ', end=' ')
     print()
 print('=' * 40)
-
-
  
