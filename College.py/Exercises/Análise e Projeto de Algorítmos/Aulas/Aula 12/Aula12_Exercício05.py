@@ -1,31 +1,28 @@
 from random import randint
-matriz = [0] * 5
+arr = [0] * 5
 x = []
 y = 1
 for i in range(5):
-    matriz[i] = [0] * 5
+    arr[i] = [0] * 5
     for j in range(5):
-        matriz[i][j] = randint(0, 9)
+        arr[i][j] = randint(0, 9)
 
-for i in matriz:
-    print(i)
+for i in range(5):
+    for j in range(5):
+        print(f'[{arr[i][j]}]', end= '')
+    print()
 
 print('Triângulo Inferior Direito:')
 
 for i in  range(1, 5):
-<<<<<<< HEAD
-    for j in range():
-        print(matriz[j][i], end = ' ')
-    print('\n')
-=======
     for j in range(5 - i, 5):
-        x.append(matriz[i][j])
+        x.append(arr[i][j])
         if len(x) == y:
             print(x)
             x = []
             y += 1
+        
 
 
 
->>>>>>> 8c9e250080bb2509686da3fd1eade75d4479bece
 
