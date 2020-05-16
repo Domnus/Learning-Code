@@ -4,7 +4,7 @@ while True:
     w = int(w)
     if h <= 2 or w <= 2:
         print('!' * 47)
-        print('!!A dimenção da matriz deverá ser maior que 2!!')
+        print('!!A dimensão da matriz deverá ser maior que 2!!')
         print('!' * 47)
     else:
         break
