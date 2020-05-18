@@ -10,10 +10,11 @@ for i in range(8):
 
 for i in range(8):
     for j in range(8):
-        if i % 2 != 0 and j % 2 == 0:
-                arr[i][j] = 1
-        if i % 2 == 0 and j % 2 != 0:
-                arr[i][j] = 1
+        arr[i][j] = (i+j) % 2
+#        if i % 2 != 0 and j % 2 == 0:
+#                arr[i][j] = 1
+#        if i % 2 == 0 and j % 2 != 0:
+#                arr[i][j] = 1
 
 print('Matriz:')
 print('=' * 24)
