@@ -1,32 +1,27 @@
 from random import randint
-mat=[]
-for i in range(5):
-    mat.append([])
-    for j in range(5):
-        mat[i].append(randint(1,50))
-        print("[{:2}] ".format(mat[i][j]),end='')
+
+arr = [0] * 8
+cont1 = 0
+cont2 = 0
+
+for i in range(8):
+    arr[i] = [0] * 8
+    for j in range(8):
+        arr[i][j] = 0
+
+for i in range(1, 8, 2):
+    for j in range(1, 8, 2):
+        arr[cont2][j] = 1
+        arr[i][cont1] = 1   
+        cont2 += 1
+    cont1 += 1
+    cont2 = 0
+        
+        
+print('Matriz:')
+print('=' * 24)
+for i in range(8):
+    for j in range(8):
+        print(f'[{arr[i][j]}]', end='')
     print()
-
-print("="*30)
-
-print("Diagonal Principal")
-for i in range(5):
-    print("[{:2}] ".format(mat[i][i]),end='')
-
-print("\n")
-print("="*30)
-
-print("Diagonal Principal")
-for i in range(5):
-    for j in range(5):
-        if i==j:
-            print("[{:2}] ".format(mat[i][j]),end='')
-        else:
-            print("[  ] ", end='')
-    print()
-
-            
-
-
-
-
+print('=' * 24)  
