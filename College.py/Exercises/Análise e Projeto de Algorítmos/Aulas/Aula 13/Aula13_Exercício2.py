@@ -1,12 +1,12 @@
 from random import randint
 
 arr = [0] * 5
-cont = 0
+sim = True
 
 for i in range(5):
     arr[i] = [0] * 5
     for j in range(5):
-        arr[i][j] = randint(0, 9)
+        arr[i][j] = randint(0, 50)
 
 print('Matriz:')
 print('=' * 15)
@@ -21,10 +21,11 @@ print('=' * 15)
 
 for i in range(5):
     for j in range(5):
-        if arr[i][j] == arr[j][i]:
-            cont += 1
+        if arr[i][j] != arr[j][i]:
+            sim = False
+            break
 
-if cont == 25:
+if sim:
     print('Matriz Simétrica')
 else:
     print('Matriz Não Simétrica')
