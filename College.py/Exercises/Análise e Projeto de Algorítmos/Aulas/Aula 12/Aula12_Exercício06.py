@@ -1,7 +1,7 @@
 from random import randint
 A = [0] * 4
 T = [0] * 6
-x = []
+
 
 for i in range(4):
     A[i] = [0] * 6
@@ -16,7 +16,7 @@ for i in A:
     print(i)
 print()
 
-for i in range(len(A)):
+for i in range(4):
     for j in range(6):
         T[j][i] = A[i][j]
 

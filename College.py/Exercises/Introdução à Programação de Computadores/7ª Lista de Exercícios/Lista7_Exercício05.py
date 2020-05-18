@@ -18,7 +18,7 @@ for i in range(10):
             print(f'[{arr[i][j]}]', end= '')
     print()
 print('=' * 40)
-''
+
 for i in range(0, 10):
     minm = arr[0][i]
     for j in range(10):
