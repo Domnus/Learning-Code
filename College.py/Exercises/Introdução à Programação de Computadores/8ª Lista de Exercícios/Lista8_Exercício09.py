@@ -7,7 +7,8 @@ for i in range(9):
     for j in range(9):
         arr[i][j] = randint(0, 10)
 
-print('Matriz:')        
+print('Matriz:')  
+print('=' * 36)      
 for i in range(9):
     for j in range(9):
         if arr[i][j] < 10:
@@ -15,6 +16,7 @@ for i in range(9):
         else:
             print(f'[{arr[i][j]}]',end= '')
     print()
+print('=' * 36)
 
 while True:
     quadrante = int(input('Digite o quadrando desejado: '))
@@ -22,7 +24,8 @@ while True:
         print('Número inválido! Digite um número entre 1 e 4')
     else:
         break
-    
+
+print('=' * 16)    
 if quadrante == 1:
     for i in range(4):
         for j in range(5, 9):
@@ -55,3 +58,5 @@ if quadrante == 4:
             else:
                 print(f'[{arr[i][j]}]',end= '')
         print()
+
+print('=' * 16)
