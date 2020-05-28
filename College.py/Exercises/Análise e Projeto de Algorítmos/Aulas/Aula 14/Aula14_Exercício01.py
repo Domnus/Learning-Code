@@ -1,12 +1,14 @@
 arr = [0] * 8
+board = {'A':0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H':7}
 
 for i in range(8):
     arr[i] = [0] * 8
     
 while True:
-    x, y = input('Informe as coordenadas da Torre [0 a 7] -> ').split(',')
-    x = int(x)
-    y = int(y)
+    y, letra = input('Informe as coordenadas da Torre [1 a 8],[A a H] -> ').split(',')
+    letra = letra.upper()
+    x = board[letra]
+    y = int(y) - 1
     if x not in range(8) or y not in range(8):
         print('Coordenadas erradas! Digite um valor entre 0 e 7!')
     else:
@@ -14,10 +16,14 @@ while True:
 
 for i in range(8):
     for j in range(8):
-        if i == x:
-            arr[i][j] = 1
-        if j == y:
-            arr[i][j] = 1
+        arr[i][j] = ' '
+
+for i in range(8):
+    for j in range(8):
+        if i == y or j == x:
+            arr[i][j] = 'X'
+        if arr[i][j] == arr[y][x]:
+            arr[y][x] = 'T'
 
 for i in range(8):
     for j in range(8):
