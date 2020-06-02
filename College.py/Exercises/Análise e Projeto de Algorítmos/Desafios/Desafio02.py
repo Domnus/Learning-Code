@@ -103,7 +103,7 @@ while desafio:
             print()
                     
         print('=' * linha_w * 2)
-        print(arr)
+    
     elif inp == 4:
         print('Programa Encerrado')
         desafio = False
