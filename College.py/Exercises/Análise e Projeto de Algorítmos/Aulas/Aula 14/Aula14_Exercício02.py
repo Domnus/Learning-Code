@@ -14,7 +14,6 @@ while True:
     else:
         break
 
-
 for i in range(8):
     for j in range(8):
         arr[i][j] = ' '
