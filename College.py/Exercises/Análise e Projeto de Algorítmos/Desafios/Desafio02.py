@@ -107,5 +107,4 @@ while desafio:
     elif inp == 4:
         print('Programa Encerrado')
         desafio = False
-
-                
+                      
