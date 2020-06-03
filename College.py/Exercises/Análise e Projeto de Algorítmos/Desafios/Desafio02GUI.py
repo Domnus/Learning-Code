@@ -1,8 +1,8 @@
 import tkinter as tk
 from random import randint 
 
-HEIGHT = 640
-WIDTH = 480
+HEIGHT = 768
+WIDTH = 1024
 
 root = tk.Tk()
 
@@ -64,10 +64,13 @@ def compactar():
                 p, b = 0, 0
         compactacao.append('0')
     compactacao.append('0')
-    compactado = tk.Label(root, text=compactacao, bg='blue', fg='white', padx=2, pady=2)
-    compactado.place(rely=0.8, relheight=0.1, relwidth=1)
-    inserir_1['state'] = 'normal'
     
+    inserir_1['state'] = 'normal'
+
+    T = tk.Text(root, height=1, width=(len(compactacao) *3), bg='blue', fg='white', padx=2, pady=2)
+    T.place(relx=0.1, rely=0.7)
+    T.insert(tk.END, compactacao)
+        
 
 def descompactar(entry):
     global descompactado
@@ -134,10 +137,10 @@ height = tk.Entry(frame)
 height.pack()
 
 tamanho = tk.Label(frame, text='Altura')
-tamanho.place(rely=0.05, relx=0.23)
+tamanho.place(rely=0.04, relx=0.37)
 
 tamanho2 = tk.Label(frame, text='Largura')
-tamanho2.place(rely=0.08, relx=0.22)
+tamanho2.place(rely=0.07, relx=0.36)
 
 width = tk.Entry(frame)
 width.pack()
