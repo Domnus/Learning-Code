@@ -7,19 +7,20 @@ WIDTH = 480
 root = tk.Tk()
 
 root.title('Desafio 2')
+        
+    
 
-def destroy_label():
-    for i in range(h):
-        elem.destroy()
-    inserir_1['state'] = 'normal'
-
-def inserir():
+def inserir(h, w):
     global imagem
     global h
     global w
     global elem
-    h = 5
-    w = 5
+    global matriz
+    try:
+        elem.destroy()
+    except Exception:
+        pass
+    
     imagem = []
     if h < 20 or w < 20:
         imagem = [0] * h
@@ -34,14 +35,17 @@ def inserir():
                     imagem[i][cond] = x
                     cond += 1
     
-    for i in range(h):
-        elem = tk.Label(upper_frame, text=imagem[i], fg='red', anchor='n')
-        elem.pack()
+    matriz = ''
+    for i in range(len(imagem)):
+        elemento = str(imagem[i])
+        matriz += elemento
+        matriz += '\n'
+    elem = tk.Label(upper_frame, text=matriz)
+    elem.pack()
     inserir_1['state'] = 'disabled'
 
 
 def compactar():
-    
     compactacao = []
     for i in range(h):
         p, b = 0, 0
@@ -60,12 +64,18 @@ def compactar():
     compactacao.append('0')
     compactado = tk.Label(root, text=compactacao, bg='blue', fg='white', padx=2, pady=2)
     compactado.place(rely=0.8, relheight=0.1, relwidth=1)
+    inserir_1['state'] = 'normal'
     
 
 def descompactar(entry):
+    global descompactado
     arr = [[]]
     cont = 0
     linhas = 1
+    try:
+        descompactado.destroy()
+    except Exception:
+        pass
     for character in entry:
         if character.isdecimal():
             numero = int(character)
@@ -89,10 +99,15 @@ def descompactar(entry):
         
     for i in range(1):
         arr.pop()
-
+    
+    matriz2 = ''
     for i in range(len(arr)):
-        descompactado = tk.Label(upper_frame, text=arr[i], bg='white')
-        descompactado.pack()
+        elemento = str(arr[i])
+        matriz2 += elemento
+        matriz2 += '\n'
+    descompactado = tk.Label(upper_frame, text=matriz2, bg='white')
+    descompactado.pack()
+        
 
 def botao():
     compactar()
@@ -107,7 +122,19 @@ frame.place(relx=0, rely=0, relwidth=1, relheight=1)
 inserir_1 = tk.Button(frame, text="1 – Inserir a imagem (criar a matriz (max. 20x20)", bg='black', fg='white', padx=30, command=inserir)
 inserir_1.pack()
 
-compactar_2 = tk.Button(frame, text='2 – Compactar a imagem', bg='black', fg='white', padx=40.5, command=botao)
+height = tk.Entry(frame)
+height.pack()
+
+tamanho = tk.Label(frame, text='Altura')
+tamanho.place(rely=0.05, relx=0.23)
+
+tamanho2 = tk.Label(frame, text='Largura')
+tamanho2.place(rely=0.08, relx=0.22)
+
+width = tk.Entry(frame)
+width.pack()
+
+compactar_2 = tk.Button(frame, text='2 – Compactar a imagem', bg='black', fg='white', padx=40.5, command=compactar)
 compactar_2.pack()
 
 descompactar_3 = tk.Button(frame, text='3 – Descompactar a imagem', bg='black', fg='white', padx=30, command=lambda: descompactar(entry.get()))
