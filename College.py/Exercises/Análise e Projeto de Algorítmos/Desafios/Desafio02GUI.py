@@ -8,21 +8,23 @@ root = tk.Tk()
 
 root.title('Desafio 2')
         
-    
-
-def inserir(h, w):
+  
+def inserir():
     global imagem
-    global h
-    global w
     global elem
     global matriz
+    global h
+    global w  
+    h = int(height.get())
+    w = int(width.get())
+    
     try:
         elem.destroy()
     except Exception:
         pass
     
     imagem = []
-    if h < 20 or w < 20:
+    if h <= 20 or w <= 20:
         imagem = [0] * h
         for i in range(h):
             imagem[i] = [0] * w
@@ -105,13 +107,19 @@ def descompactar(entry):
         elemento = str(arr[i])
         matriz2 += elemento
         matriz2 += '\n'
-    descompactado = tk.Label(upper_frame, text=matriz2, bg='white')
+    descompactado = tk.Label(upper_frame, text=matriz2, bg='white', fg='red')
     descompactado.pack()
         
 
 def botao():
     compactar()
     destroy_label()
+
+
+def submit():
+    tamanho.get()
+    tamanho2.get()
+
 
 canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH)
 canvas.pack()
@@ -146,7 +154,7 @@ entry.pack()
 sair_4 = tk.Button(frame, text='4 – Sair do programa', bg='black', fg='white', command=quit, padx=53)
 sair_4.pack()
 
-upper_frame = tk.Frame(root, bg='#0bd46f', bd=10)
+upper_frame = tk.Frame(root, bg='#14b6c4', bd=10)
 upper_frame.place(relx=0.5, rely=0.3, relheight=0.55, relwidth=0.75, anchor='n')
 
 label = tk.Label(upper_frame, text='Matriz')
