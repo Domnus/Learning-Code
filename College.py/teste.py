@@ -1,7 +1,11 @@
-matriz2 = ''
-    for i in range(len(arr)):
-        elemento = str(arr[i])
-        matriz2 += elemento
-        matriz2 += '\n'
-    descompactado = tk.Label(upper_frame, text=matriz2, bg='white')
-    descompactado.pack()
+def myfunc(*args):
+    even = []
+    mylist = list(args)
+    for number in mylist:
+        if number % 2 == 0:
+            even.append(number)
+    print(even)
+    
+myfunc(5,6,7,8)
+    
+
