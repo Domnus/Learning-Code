@@ -1,11 +1,7 @@
-def myfunc(*args):
-    even = []
-    mylist = list(args)
-    for number in mylist:
-        if number % 2 == 0:
-            even.append(number)
-    print(even)
-    
-myfunc(5,6,7,8)
-    
+n = int(input())   
 
+for i in range(1, n/2):
+    if n % i == 0:
+        print(n)    
+        break
+    
