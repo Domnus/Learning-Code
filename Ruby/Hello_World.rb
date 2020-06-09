@@ -1,1 +1,3 @@
-puts "Hello World"
+text: str = 'lskjldjs'
+
+print(text)
