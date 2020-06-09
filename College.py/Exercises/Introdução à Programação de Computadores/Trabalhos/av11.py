@@ -24,13 +24,13 @@ for i in range(h):
     for j in range(w):
         arr[i][j] = int(input('-> '))
 
-print('=' * 30)        
-print('Matriz:')        
+print('=' * 30)
+print('Matriz:')
 for i in range(h):
     for j in range(w):
         print(f'[{arr[i][j]}]',end= '')
     print()
-print('=' * 30) 
+print('=' * 30)
 
 for i in range(h):
     for j in range(w):
@@ -61,12 +61,4 @@ if cont1 == cont2:
         print('Quadrado Mágico')
 else:
     print('Não é um Quadrado Mágico')
-print('=' * 30) 
-
-
-
-
-
-
-
-
+print('=' * 30)

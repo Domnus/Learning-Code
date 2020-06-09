@@ -10,20 +10,20 @@ vencedor = None
 
 player_atual = 'X'
 
-tabuleiro = ['-', '-', '-', 
-             '-', '-', '-', 
+tabuleiro = ['-', '-', '-',
+             '-', '-', '-',
              '-', '-', '-']
 print('\nReady Player 1?')
 
 
 def jogo():
     mostrar_tabuleiro()
-    
+
     while game_rodando:
         turno()
-            
+
         game_parou()
-            
+
         trocar_player()
     if vencedor == 'X':
         print(f'Parabéns, o vencedor é o {player1}!')
@@ -31,7 +31,7 @@ def jogo():
         print(f'Parabéns, o vencedor é o {player2}!')
     elif vencedor == None:
         print('Jogo da Velha!')
-        
+
 
 def mostrar_tabuleiro():
     print('\n')
@@ -56,8 +56,8 @@ def turno():
             tabuleiro[posicao] = player_atual
             valido = True
         mostrar_tabuleiro()
-        
-    
+
+
 def game_parou():
     se_vencedor()
     se_empate()
@@ -68,14 +68,14 @@ def se_vencedor():
     diagonal_vencedor = diagonais()
     linha_vencedor = linhas()
     coluna_vencedor = colunas()
-    
+
     if diagonal_vencedor:
         vencedor = diagonal_vencedor
     elif linha_vencedor:
         vencedor = linha_vencedor
     elif coluna_vencedor:
         vencedor = coluna_vencedor
-    
+
 
 def se_empate():
     global game_rodando
@@ -124,7 +124,7 @@ def colunas():
     coluna1 = tabuleiro[0] == tabuleiro[3] == tabuleiro[6] != '-'
     coluna2 = tabuleiro[1] == tabuleiro[4] == tabuleiro[7] != '-'
     coluna3 = tabuleiro[2] == tabuleiro[5] == tabuleiro[8] != '-'
-    
+
     if coluna1 or coluna2 or coluna3:
         game_rodando = False
     if coluna1:
@@ -135,11 +135,11 @@ def colunas():
         return tabuleiro[2]
     else:
         return None
-    
+
 
 def trocar_player():
     global player_atual
-    if player_atual == "X": 
+    if player_atual == "X":
         player_atual = "O"
     elif player_atual == "O":
         player_atual = "X"
