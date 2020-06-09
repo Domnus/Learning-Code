@@ -16,7 +16,7 @@ while (num <=25):
         arr[i][fim-1] = num
         num += 1
 
-    for j in range(fim-2, -1, -1):
+    for j in range(fim-2, inicio-1, -1):
         arr[fim-1][j] = num
         num += 1
     
