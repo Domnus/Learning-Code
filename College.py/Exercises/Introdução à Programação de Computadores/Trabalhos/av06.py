@@ -8,13 +8,10 @@ while x:
             cont += 1
             i += 1
         else:
-            n += 1 
+            n += 1
             i = 1
             cont = 0
     if cont == 15:
         x = False
-     
+
 print(n)
-    
-
-
