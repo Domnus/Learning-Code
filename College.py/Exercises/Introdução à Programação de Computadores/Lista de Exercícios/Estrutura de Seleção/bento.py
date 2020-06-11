@@ -79,9 +79,68 @@ fala ae
  CULLO
  vou ver se aqui tem como mandar caule 
  qqqqqq
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKkk
+TILTADO 
+'fala'
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+⣿⣿⣿⣿⣿⣿⣿⡿⢉⣴⣶⣌⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⠿⢃⣴⣿⣇⡙⢿⣷⣄⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡟⢋⣴⣿⣿⣄⠨⣍⡀⠙⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⡿⢉⣴⣿⣿⡈⣉⠛⢷⣌⣻⣿⠟⣡⣾⣿⣿⣿⣿⣿⣿⣿⣿
+⢃⣴⠿⢋⣉⠻⢧⡈⢴⣦⣾⠟⢡⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⡘⢿⣷⣌⠁⣶⢌⣿⣾⠟⢡⣶⣌⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣷⣦⠙⢿⣷⣤⣾⠟⣡⣶⣦⠙⢿⣷⣌⠹⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣆⣉⣉⣡⣾⣿⣿⣿⣿⣆⡙⢿⣷⣄⠻⢿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣤⡙⢿⣷⣌⠛⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⠙⢿⣷⣌⠹⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⡙⢁⣴⣦⠙
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣌⠛⢋⣴
+meeeeeeeeee blz 
+jaisdjaidjaidjaiodjai sei nem q q e isso 
+kkkkkkkk o cara e maniaco 
+kkkkkkkk amem amem 
+se eu ter vergonha na cara e focar e gg 
+aslkjfsaljas
+opa 
+twitch.tv/yoda
+kkkkkkkkkk
+novs 
+eu nao tenho nem 1 :C
+poggg amem kkkkkkkkkk
+pq era toda vez bixo 
+compra o oculos chave dele 
+a ai fodeu kkkkkkk
+na proxima vez eu to pensando em apostar vey 
+tipo 20 reais por ai 
+kkkkkkkkkk se eu apostar t falo 
+nao sei se da certo 
+mas ne 
 
+eu queria mt
+mas sou cagão
+kkkk
+mas eu já uso oculos
+com aquele eu não enxergo kkkkkkk
+to com 880 até agora
+ele disse que não vai resetar mais a loja
+até o final do ano consigo comprar kkkk
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+https://www.twitch.tv/baiano
+20 mil pontos na loja dele tu ganha 20 reais em rep
+kkkkkkkkkkkkkkkkkkkkkk
+deixa aqui pra quando a gente ver de novo ver se a gente vai saber
+se a gente virou bons programadores
+kkkkkkkkkkkkkkkkkk
+def funcname(self, parameter_list):
+    raise NotImplementedError
 kkkkkkkkkkkkkkkkkkkkkkkkkkkk
+esse aí deixa
 meeeeeeeeeeeeeeeeeeeeeee
+se o iago ver
+ele me mata kkkkkkkkkkkkkkkkkkkkkkkkk
+o cara já ta puto que falo alemão
+"falo"
+EU TO TILTADO CARA?
 ban
  print('hugo^')
 kkkkkkkkkkkkkkkkkkkkkkkkk
