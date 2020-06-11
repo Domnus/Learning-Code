@@ -1,2 +1,2 @@
-friends = Array['Kevin', 'Lucas', 'Joe']
+friends = Array['HANAI', 'FERNANDINHO', 'HUGUIN']
 print friends
