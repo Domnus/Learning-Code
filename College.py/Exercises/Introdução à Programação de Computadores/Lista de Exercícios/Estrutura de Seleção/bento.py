@@ -67,8 +67,35 @@ kakakakakakkakak
 fala ae
  kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk aqui e mais dahora 
  pq estamos programando 
+ kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+ vai ser foda 
+ apaga mesmo noa 
+ já enviei pro git
+  nao 
+ ai nao tá safe
+ queria mandar a diretora do meu colegio tomar um cafe 
+ YEAH 
+ kkkkkkkkk
+ CULLO
+ vou ver se aqui tem como mandar caule 
+ qqqqqq
+ ░░░░█─────────────█▀─▀──
+░░░░▓█───────▄▄▀▀█──────
+░░░░▒░█────▄█▒░░▄░█─────
+ ░░░░░░░▀▄─▄▀▒▀▀▀▄▄▀─────
+ ░░░░░░░░░█▒░░░░▄▀───────
+ ▒▒▒░░░░▄▀▒░░░░▄▀────────
+ ▓▓▓▓▒░█▒░░░░░█▄─────────
+█████▀▒░░░░░█░▀▄────────
+█████▒▒░░░▒█░░░▀▄───────
+ ███▓▓▒▒▒▀▀▀█▄░░░░█──────
+▓██▓▒▒▒▒▒▒▒▒▒█░░░░█─────
+▓▓█▓▒▒▒▒▒▒▓▒▒█░░░░░█────
+░▒▒▀▀▄▄▄▄█▄▄▀░░░░░░░█─
  print('hugo^')
-print('bento ')
+kkkkkkkkkkkkkkkkkkkkkkkkk
+kaffee ist gut
+print('bento V')
 mee
 meeeeeeeeuuu garoto
 vai que é tua tarafel
