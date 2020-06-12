@@ -75,12 +75,4 @@ while op == 'S':
                 print('Velha!')
                 sair = True
     op = input('Deseja jogar novamente? [S/N] : ').upper()[0]
-
-
-
-            
-            
-      
-
-
-
+    
