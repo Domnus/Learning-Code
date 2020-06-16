@@ -25,7 +25,6 @@ print('A media das idades é {:.2f}'.format(media))
 print('O idoso mais novo tem {} anos'.format(idosos[0]))
 
 
-#OLHA ESSE BENTO PLIS bentoooo o o o o eu mudei KASOPDAD
 
 
 '''
