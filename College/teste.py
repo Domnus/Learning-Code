@@ -24,9 +24,6 @@ print(a)
 print('A media das idades é {:.2f}'.format(media))
 print('O idoso mais novo tem {} anos'.format(idosos[0]))
 
-
-
-
 '''
 from random import randint as rd
 
