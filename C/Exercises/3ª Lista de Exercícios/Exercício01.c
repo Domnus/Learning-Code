@@ -7,7 +7,7 @@ int main()
     int num, quadrado;
     double raiz;
     printf("Digite um número: ");
-    scanf("%lf", &num);
+    scanf("%d", &num);
 
     if(num > 0){
         quadrado = num * num;
