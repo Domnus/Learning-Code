@@ -24,7 +24,7 @@ int main()
         printf("Dia do Rodízio: Quarta-Feira\n");
     }
     else if (fimPlaca == 7 || fimPlaca == 8){
-        printf("Dia do Rodízio  : Quinta-Feira\n");
+        printf("Dia do Rodízio: Quinta-Feira\n");
     }
     else if (fimPlaca == 9 || fimPlaca == 0){
         printf("Dia do Rodízio: Sexta-Feira\n");
