@@ -1,4 +1,4 @@
-coca = input('Digite a frase dejesada: ')
+coca = input('Digite a frase desejada: ')
 acoc = coca[::-1]
 
 if coca == acoc:
