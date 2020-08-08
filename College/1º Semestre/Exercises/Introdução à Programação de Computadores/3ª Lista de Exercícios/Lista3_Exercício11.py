@@ -11,7 +11,7 @@ print(y)
 print(z)
 
 if x == y and y == z:
-    print(f'Parabéns! Você os 3 números iguais e ganhou R${pila*100}!')
+    print(f'Parabéns! Você conseguiu 3 números iguais e ganhou R${pila*100}!')
 elif x == y or y == z or x == z:
     print(f'Parabéns! Você conseguiu 2 números iguais e ganhou R${pila*5}!')
 else:
