@@ -7,12 +7,14 @@ coca = list(coca)
 
 for i in range(len(coca)):
     try:
-        if "P" == coca[i+1]:
-            continue
+        if "P" == coca[i] and coca[i+1] == "P":
+            coca.pop(i)
+        elif coca[i] == "P":
+            coca.pop(i)
     except:
         Exception
     else:
-        coca.pop(i)
+        continue
         
 coca = "".join(coca)
 print(coca)
