@@ -2,7 +2,6 @@
 
 int main()
 {
-
     int A, B, C;
 
     printf("A: ");
