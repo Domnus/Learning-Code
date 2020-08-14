@@ -29,6 +29,8 @@ public class Exercicio03 {
 		{
 			System.out.println("Valor inválido.");
 		}
+
+		scan.close();
 	}
 
 }

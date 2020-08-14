@@ -19,6 +19,8 @@ public class Exercicio07 {
 		float dinheiroGasto = litros * precoCombustivel;
 		
 		System.out.print("Você gastará " + litros + " litros e R$" + dinheiroGasto + " para fazer a viagem");
+
+		scan.close();
 	}
 
 }

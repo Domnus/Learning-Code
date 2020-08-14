@@ -9,7 +9,9 @@ public class Partay {
 		System.out.println("Enter pokemon 1:");
 		String pokemon1 = scan.nextLine();
 		
-		System.out.println(pokemon1);		
+		System.out.println(pokemon1);	
+		
+		scan.close();
 	}
 
 }

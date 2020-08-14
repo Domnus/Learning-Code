@@ -15,6 +15,8 @@ public class Exercicio08 {
 		float aPagar = (kmPercorridos * 0.15F) + (diasAlugado * 60F);
 		
 		System.out.print("Total a pagar: R$" + aPagar);
+
+		scan.close();
 	}
 
 }

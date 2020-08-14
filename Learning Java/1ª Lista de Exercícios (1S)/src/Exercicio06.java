@@ -15,6 +15,8 @@ public class Exercicio06 {
 		float novoSalario = salario + (salario * (reajuste / 100));
 		
 		System.out.print("O novo salário será R$" + novoSalario);
+
+		scan.close();
 	}
 
 }

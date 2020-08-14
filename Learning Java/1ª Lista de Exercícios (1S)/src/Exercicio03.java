@@ -12,6 +12,7 @@ public class Exercicio03 {
 		
 		System.out.println(metro + " metro(s) em milímetros é igual a " + mil + " milímetro(s).");
 		
+		scan.close();
 	}
 
 }

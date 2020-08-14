@@ -38,6 +38,8 @@ public class Exercicio02 {
 		    	System.out.println("Dia do Rodízio: Sexta-Feira");
 		    }
 		}
+
+		scan.close();
 	}
 
 }

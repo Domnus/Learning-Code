@@ -21,6 +21,8 @@ public class Exercicio04 {
 		int total = segundos + (minutos * 60) + (horas * 3600) + (dias * 24 * 3600);
 		
 		System.out.println("Total de segundos: " + total);
+
+		scan.close();
 	}
 
 }

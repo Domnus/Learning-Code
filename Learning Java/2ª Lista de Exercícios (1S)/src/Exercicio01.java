@@ -28,6 +28,8 @@ public class Exercicio01 {
 		    	System.out.println("O número não é ascendente.");
 		    }
 		}
+		
+		scan.close();
 	}
 
 }

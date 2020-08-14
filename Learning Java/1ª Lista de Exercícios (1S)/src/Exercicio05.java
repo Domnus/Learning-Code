@@ -18,6 +18,7 @@ public class Exercicio05 {
 			   
 		System.out.println("A: " + A + "\nB: " + B);
 		
+		scan.close();
 	}
 
 }

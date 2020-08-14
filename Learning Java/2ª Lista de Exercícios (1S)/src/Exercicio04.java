@@ -30,7 +30,9 @@ public class Exercicio04 {
 	    else
 	    {
 	        System.out.println("É um triângulo escaleno.\n");
-	    }
+		}
+		
+		scan.close();
 	}
 
 }

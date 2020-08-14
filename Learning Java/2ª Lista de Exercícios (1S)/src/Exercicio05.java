@@ -26,6 +26,8 @@ public class Exercicio05 {
         else if (ang1 > 90 || ang2 > 90 || ang3 > 90){
             System.out.println("Obtusângulo");
         }
+
+        scan.close();
     }
     
 }

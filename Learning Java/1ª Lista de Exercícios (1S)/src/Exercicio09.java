@@ -12,6 +12,8 @@ public class Exercicio09 {
 		float C = ((F - 32F) / 9F) * 5F;
 		
 		System.out.print("ºC: " + C);
+
+		scan.close();
 	}
 
 }
