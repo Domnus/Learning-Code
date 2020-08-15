@@ -7,7 +7,7 @@ int main(void)
     srand(time(0));
 
     int lower = 1, upper = 36, count = 1;
-    int num = (rand() % (upper - lower +1) + lower);
+    int num = (rand() % (upper - lower + 1) + lower);
     int guess;
     float valor_aposta;
 
@@ -34,6 +34,6 @@ int main(void)
     {
         printf("Você não acertou nada! Mais sorte da próxima vez!\n");
     }
-    
+
 
 }
