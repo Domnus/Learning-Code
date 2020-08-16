@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include <ctype.h>
 
-int main()
+void cr()
 {
   int x, y, m;
   int a, b = 0, i, j, k = 0;
@@ -58,5 +60,46 @@ int main()
       }
     }
     printf("\n");
+  }
+}
+
+void cong()
+{
+  int a, b, c, cong;
+
+  printf("A ≡ B(MOD C)");
+
+  printf("Insira os números no formato [A B C] -> ");
+  scanf("%d %d %d", &a, &b, &c);
+
+  cong = (a - b) % c;
+  printf("%d ≡ %d (Mod %d) = %d", a, b, c, cong);
+
+}
+int main()
+{
+  char x[4];
+  
+  while (true)
+  {
+    printf("Modulo = Mod \n Divisor = Div \n Congruencia = Cong \n Classe de Residuo = Cr \n Se desejar encerrar digite CLOSE");
+    scanf("%s", &x);
+
+    int j = 0;
+    char str[] = x;
+    char ch;
+
+    while (str[j]) 
+    { 
+        ch = str[j]; 
+        putchar(toupper(ch)); 
+        j++; 
+    } 
+
+    if (ch == "CR ")
+    {
+      cr();
+    }
+
   }
 }
