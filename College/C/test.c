@@ -1,56 +1,43 @@
 #include <termios.h>
 #include <stdio.h>
 
-static struct termios old, current;
-
-/* Initialize new terminal i/o settings */
-void initTermios(int echo)
+int main()
 {
-  tcgetattr(0, &old); /* grab old terminal i/o settings */
-  current = old; /* make new settings same as old settings */
-  current.c_lflag &= ~ICANON; /* disable buffered i/o */
-  if (echo) {
-      current.c_lflag |= ECHO; /* set echo mode */
-  } else {
-      current.c_lflag &= ~ECHO; /* set no echo mode */
+  int x, y, m;
+  int a, b, i, j, k = 0;
+  
+  printf("Insira a range no formato [COMEÇO FIM] -> ");
+  scanf("%d %d", &x, &y);
+  y++;
+
+  printf("Insira o M -> ");
+  scanf("%d", &a);
+
+  for (i = 0; i < a; i++)
+  {
+    for (j = x; j < y; j++)
+    {
+      if ((j - i) % a == 0)
+      {
+        b++;
+      }
+    }
   }
-  tcsetattr(0, TCSANOW, &current); /* use these new terminal i/o settings now */
-}
+  
+  int list[a][b];
 
-/* Restore old terminal i/o settings */
-void resetTermios(void)
-{
-  tcsetattr(0, TCSANOW, &old);
-}
+  for (i = 0; i < a; i++)
+  {
+    for (j = x; j < y; j++)
+    {
+      if ((j - i) % a == 0)
+      {
+        list[i][k] = j;
+      }
+      k++;
+    }
+  }
+  
+  printf("%d", list);
 
-/* Read 1 character - echo defines echo mode */
-char getch_(int echo)
-{
-  char ch;
-  initTermios(echo);
-  ch = getchar();
-  resetTermios();
-  return ch;
-}
-
-/* Read 1 character without echo */
-char getch(void)
-{
-  return getch_(0);
-}
-
-/* Read 1 character with echo */
-char getche(void)
-{
-  return getch_(1);
-}
-
-/* Let's test it out */
-int main(void) {
-  char c;
-  printf("(getche example) please type a letter: ");
-  c = getche();
-  printf("\nYou typed: %c\n", c);
-
-  return 0;
 }
