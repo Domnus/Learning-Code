@@ -7,6 +7,11 @@ int main()
   printf("Informe o ângulo: ");
   scanf("%f", &angulo);
 
+  if (angulo > 360)
+  {
+    angulo -= 360;
+  }
+
   if (angulo <= 90)
   {
     printf("O ângulo está no Quadrante 1.\n");
