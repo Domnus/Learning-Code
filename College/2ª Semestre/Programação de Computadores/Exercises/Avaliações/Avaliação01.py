@@ -15,8 +15,6 @@ for i in range(len(coca)):
         Exception
     else:
         continue
-        
+
 coca = "".join(coca)
 print(coca)
-
- 
