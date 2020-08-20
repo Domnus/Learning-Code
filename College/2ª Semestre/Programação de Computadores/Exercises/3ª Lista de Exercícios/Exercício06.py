@@ -13,10 +13,11 @@ for i in range(10):
     print()
 
 def maiorColuna(coluna):
+    maior = 0
     for i in range(len(list)):
-        for j in list[coluna][i]:
-            if i > maior:
-                maior = i
+        for j in range(len(list)):
+            if list[j][i] > maior:
+                maior = list[j][i]
     return maior
 
 print(maiorColuna(3))
