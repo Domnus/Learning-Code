@@ -1,19 +1,32 @@
-a = []
+from functools import reduce    # need this line if you're using Python3.x
 
-for i in range(7):
-    a.append([])
-    for j in range(7):
-        a[i].append(0)
-for i in range(7):
-    for j in range(7):
-        if i>=j:
-            a[i][j]=i**2
-        else:
-            a[i][j]=j**2
-for i in range(7):
-    for j in range(7):
-        print('[{:2}]'.format(a[i][j]), end=' ')
-    print()
+def lcm(a, b):
+    if a > b:
+        greater = a
+    else:
+        greater = b
 
+    while True:
+        if greater % a == 0 and greater % b == 0:
+            lcm = greater
+            break
+        greater += 1
 
+    return lcm
 
+def get_lcm_for(your_list):
+    return reduce(lambda x, y: lcm(x, y), your_list)
+
+def MMC(*args):
+    list = []
+
+    for i in range(len(args[0])):
+        num = args[0][i]
+        num = int(num)
+        list.append(num)
+
+    return list
+
+list = MMC(input("Digite número separados por um espaço: ").split(" "))
+ans = get_lcm_for(list)
+print(ans)

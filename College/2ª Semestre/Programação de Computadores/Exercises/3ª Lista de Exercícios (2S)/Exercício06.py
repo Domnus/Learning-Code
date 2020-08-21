@@ -9,15 +9,27 @@ for i in range(10):
 
 for i in range(10):
     for j in range(10):
-        print(f"[{list[i][j]}]", end='')
+        print("[{:2}]".format(list[i][j]), end='')
     print()
 
 def maiorColuna(coluna):
     maior = 0
     for i in range(len(list)):
         for j in range(len(list)):
-            if list[j][i] > maior:
-                maior = list[j][i]
+            if list[j][coluna] > maior:
+                maior = list[j][coluna]
     return maior
 
-print(maiorColuna(3))
+def maiorLinha(linha):
+    maior = 0
+    for i in range(len(list)):
+        for j in range(len(list)):
+            if list[linha][j] > maior:
+                maior = list[linha][j]
+    return maior
+
+linha = int(input("Digite a linha: "))
+coluna = int(input("Digite a coluna: "))
+
+print(f"O maior número na linha {linha} é {maiorLinha(linha)}.")
+print(f"O maior número na coluna {coluna} é {maiorColuna(coluna)}.")
