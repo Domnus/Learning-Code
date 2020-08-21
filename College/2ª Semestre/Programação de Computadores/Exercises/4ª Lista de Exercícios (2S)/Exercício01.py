@@ -38,7 +38,7 @@ def MMC(*args):
         list.append(num)
 
     x = 2
-
+    print(list)
     while not encerrou(list):
         if primo(x):
             c = reduce(lambda a,b: divisivel(a, b, x), list)
@@ -46,7 +46,7 @@ def MMC(*args):
                 div.append(x)
                 for i in range(len(list)):
                     if list[i] % x == 0:
-                        list[i] = list[i] / x
+                        list[i] = list[i] // x
                 x = 2
             else:
                 x += 1
