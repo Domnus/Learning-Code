@@ -5,45 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - InverterFrase",
+            "name": "Python: Current File",
+            "type": "python",
             "request": "launch",
-            "mainClass": "InverterFrase",
-            "projectName": "Java"
+            "program": "${file}",
+            "console": "integratedTerminal"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - test",
             "request": "launch",
             "mainClass": "test"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Exercicio05",
-            "request": "launch",
-            "mainClass": "Exercicio05",
-            "projectName": "2ª Lista de Exercícios (1S"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Exercício02",
-            "request": "launch",
-            "mainClass": "Exercício02",
-            "projectName": "1ª Lista de Exercícios (1S)"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Exercicio01",
-            "request": "launch",
-            "mainClass": "Exercicio01",
-            "projectName": "1ª Lista de Exercícios (1S)"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Exercício01",
-            "request": "launch",
-            "mainClass": "Exercício01",
-            "projectName": "1ª Lista de Exercícios (1S)"
         },
         {
             "type": "java",
@@ -57,13 +29,6 @@
             "request": "launch",
             "mainClass": "HelloWorld",
             "projectName": "College_dfc08d29"
-        },
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
         }
     ]
 }
