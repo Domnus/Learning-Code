@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercicio01",
+            "request": "launch",
+            "mainClass": "Exercicio01"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
@@ -13,22 +19,9 @@
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - test",
-            "request": "launch",
-            "mainClass": "test"
-        },
-        {
-            "type": "java",
             "name": "Java: Current File",
             "request": "launch",
             "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - HelloWorld",
-            "request": "launch",
-            "mainClass": "HelloWorld",
-            "projectName": "College_dfc08d29"
         }
     ]
 }
