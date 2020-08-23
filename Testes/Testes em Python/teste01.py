@@ -17,7 +17,7 @@ def lcm(a, b):
 def get_lcm_for(your_list):
     return reduce(lambda x, y: lcm(x, y), your_list)
 
-def MMC(*args):
+def make_list(*args):
     list = []
 
     for i in range(len(args[0])):
@@ -27,6 +27,6 @@ def MMC(*args):
 
     return list
 
-list = MMC(input("Digite número separados por um espaço: ").split(" "))
+list = make_list(input("Digite número separados por um espaço: ").split(" "))
 ans = get_lcm_for(list)
 print(ans)
