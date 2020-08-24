@@ -23,7 +23,7 @@ int main()
     }
     else if ((ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0))
     {
-        if (mes = 2 && dia > 29)
+        if (mes == 2 && dia > 29)
         {
             printf("Data inválida!\n");
         }
@@ -32,7 +32,7 @@ int main()
             printf("Data válida!\n");
         }
     }
-    else if (mes = 2 && dia > 28)
+    else if (mes == 2 && dia > 28)
     {
         printf("Data inválida!\n");
     }

@@ -18,16 +18,15 @@ int main()
     B = ovos / 3;
     C = leite / 5;
 
-    if (A > B && B > C)
+    if (A <= B && A <= C)
     {
         printf("Será possível fazer %g bolos.\n", A);
     }
-    else if (B < C)
+    else if (B <= C && B<= A)
     {
         printf("Será possível fazer %g bolos.\n", B);
     }
     else 
     {
         printf("Será possível fazer %g bolos.\n", C);
-    }
 }
