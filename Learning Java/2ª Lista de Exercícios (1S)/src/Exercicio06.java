@@ -10,5 +10,7 @@ public class Exercicio06 {
         int n1 = scan.nextInt();
 
         System.out.println(n1);
+
+        scan.close();
     }
 }
