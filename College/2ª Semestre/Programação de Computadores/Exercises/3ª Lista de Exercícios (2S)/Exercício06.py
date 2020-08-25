@@ -2,16 +2,6 @@ from random import randint
 
 list = [0] * 10
 
-for i in range(10):
-    list[i] = [0] * 10
-    for j in range(10):
-        list[i][j] = randint(1, 50)
-
-for i in range(10):
-    for j in range(10):
-        print("[{:2}]".format(list[i][j]), end='')
-    print()
-
 def maiorColuna(coluna):
     maior = 0
     for i in range(len(list)):
@@ -27,6 +17,17 @@ def maiorLinha(linha):
             if list[linha][j] > maior:
                 maior = list[linha][j]
     return maior
+
+for i in range(10):
+    list[i] = [0] * 10
+    for j in range(10):
+        list[i][j] = randint(1, 50)
+
+for i in range(10):
+    for j in range(10):
+        print("[{:2}]".format(list[i][j]), end='')
+    print()
+
 
 linha = int(input("Digite a linha: "))
 coluna = int(input("Digite a coluna: "))

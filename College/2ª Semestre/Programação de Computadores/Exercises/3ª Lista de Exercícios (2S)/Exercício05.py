@@ -1,25 +1,13 @@
-def primoOuNão(num):
-    # If given number is greater than 1
-    if num > 1:
-
-       # Iterate from 2 to n / 2
-       for i in range(2, num):
-
-           # If num is divisible by any number between
-           # 2 and n / 2, it is not prime
-           if (num % i) == 0:
-               return False
-               break
-       else:
-           return True
-
-    else:
-       return False
+def primoOuNao(num):
+    if num == 1:
+        return False
+    for i in range(2, num//+1):
+        if num % i == 0:
+            return False
+    return True
 
 n = int(input("Digite um número: "))
 
-for i in range(n):
-    if primoOuNão(i):
-        print(f"{i} é primo.")
-    else:
-        print(f"{i} não é primo.")
+for i in range(1,n):
+    if primoOuNao(i):
+        print(i)
