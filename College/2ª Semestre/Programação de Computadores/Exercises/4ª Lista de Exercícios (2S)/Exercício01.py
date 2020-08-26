@@ -7,7 +7,7 @@ def divisivel(a, b, x):
     return False
 
 def encerrou(list):
-    return reduce(lambda a, b: True if a == 1 or b == 1 else False, list)
+    return reduce(lambda a, b: True if a == 1 and b == 1 else False, list)
 
 def primo(num):
     if num == 1:
@@ -29,7 +29,7 @@ def MMC(*args):
 
     x = 2
     print(list)
-    while not encerrou(list):
+    while True:
         if primo(x):
             for i in range(len(list)-1):
                 if divisivel(list[i], list[i+1], x):
@@ -38,16 +38,22 @@ def MMC(*args):
                         if list[i] % x == 0:
                             list[i] = list[i] // x
                     x = 2
+                    print(list)
+                    time.sleep(1)
+                    continue
                 else:
                     x += 1
 
-        print(list)
-        print(div)
-        time.sleep(3)
-
+            if encerrou(list):
+                break
+        else:
+            x += 1
+        
+    
     for i in range(len(div)):
         mmc *= div[i]
 
+    print(div)
     print(f"O MMC é {mmc}.")
 
 MMC(input("Digite os números desejados separados por um espaço: ").split(" "))
