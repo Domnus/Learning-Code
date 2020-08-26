@@ -23,13 +23,13 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
-        list3[i] = (list1[i]) + (list2[i]); 
+        list3[i] = list1[i] + list2[i]; 
     }
 
     printf("Lista 3: ");
     for (int i = 0; i < 10; i++)
     {
-        printf("[%d]", list1[i]);
+        printf("[%d]", list3[i]);
     }
 
     printf("\n");
