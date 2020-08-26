@@ -5,7 +5,7 @@ int main()
   int idade;
 
   printf("Digite a idade do nadador: ");
-  scanf("%d", &idade");
+  scanf("%d", &idade);
 
   if (idade <= 8)
   {

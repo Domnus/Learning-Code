@@ -10,5 +10,5 @@ int main()
     fflush(stdin);
     scanf("%d", &nota);
 
-  } while (nota > 10 || nota <i 0);
+  } while (nota > 10 || nota < 0);
 }
