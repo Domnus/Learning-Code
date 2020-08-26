@@ -27,15 +27,19 @@ def MMC(*args):
         num = int(num)
         list.append(num)
 
+    x = 2
     print(list)
     while not encerrou(list):
-        x = 2
         if primo(x):
-            for i in range(len(list)):
-                if list[i] % x == 0:
-                    list[i] = list[i] // x
+            for i in range(len(list)-1):
+                if divisivel(list[i], list[i+1], x):
                     div.append(x)
-                x += 1
+                    for i in range(len(list)):
+                        if list[i] % x == 0:
+                            list[i] = list[i] // x
+                    x = 2
+                else:
+                    x += 1
 
         print(list)
         print(div)

@@ -1,24 +1,39 @@
-def primo_Ou_Nao(num):
-    # If given number is greater than 1
-    if num > 1:
+lista = []
+list1 = []
+list2 = []
+list3 = []
+while True:
 
-       # Iterate from 2 to n / 2
-       for i in range(2, num):
+  h = int(input('Insira o numero enquanto quiser adicionar,para break digite 0'))
+  if h == 0:
+      break
+  else:
+        lista.append(h)
+maiorl = 0
+def maior(a,b):
+    if a > b:
+        return a
+    return b
+def mmci(maiorl):
+  list1 = []
+  list2 = []
+  list3 = []
+  for i in lista:
 
-           # 2 and n / 2, it is not prime
-           # If num is divisible by any number between
-           if (num % i) == 0:
-               return False
-               break
-       else:
-           return True
-
-    else:
-       return False
-
-x = int(input("Digite um número: "))
-
-if x:
-    print("Número primo")
-else:
-    print("Não é primo")
+      if i>maiorl:
+            maiorl = i
+  for j in lista:
+      for i in range(1,maiorl+1):
+        list1.append(j*i)
+        if list2 == []:
+            list3 = list1
+        else:
+            for x in list1:
+                if x in list2:
+                    list3.append(x)
+        mmc=list3[0]
+        list1.clear()
+        list2 = list3
+        list3.clear()
+  return mmc
+print(mmci(0))

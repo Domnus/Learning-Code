@@ -15,10 +15,10 @@ public class Exercicio05 {
         float ang3 = scan.nextFloat();
         
         if (ang1 + ang2 + ang3 != 180){
-            System.out.println("Não é um triângulo!\n");
+            System.out.println("Não é um triângulo!");
         }
         else if (ang1 > 90 && ang2 > 90 && ang3 > 90){
-            System.out.println("Acutângulo\n");
+            System.out.println("Acutângulo");
         }
         else if (ang1 == 90 || ang2 == 90 || ang3 == 90){
             System.out.println("Triângulo Retângulo");
