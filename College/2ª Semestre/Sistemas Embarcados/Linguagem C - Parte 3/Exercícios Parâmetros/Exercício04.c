@@ -13,6 +13,10 @@ int elemInList(int list[10], int n)
             break;
         }
     }
+    if (! valid)
+    {
+        return -1;
+    }
 }
 
 int main()
