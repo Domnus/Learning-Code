@@ -5,7 +5,7 @@ import cv2
 # ap.add_argument("-i", "--image", required=True, help="Caminho da imagem")
 # args = vars(ap.parse_args())
 
-image = cv2.imread("/home/bentocarlos/Pictures/Screenshot_20200804_220003.png")
+image = cv2.imread("/home/bentocarlos/Pictures/Wallpapers/0hwfsqufm3w41.jpg")
 print("Altura: {} pixels".format(image.shape[0]))
 print("Largura: {} pixels".format(image.shape[1]))
 print("Canais: {} pixels".format(image.shape[2]))
