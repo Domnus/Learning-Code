@@ -1,19 +1,25 @@
 #include <stdio.h>
 
-int antecessorSucessor(int num, int* sucessor, int *antecessor)
+int qAlgs(int n)
 {
-    *antecessor = num - 1;
-    *sucessor = num + 1;
+    int  countDigits = 0, valor = 1;
 
+    while (valor <= n)
+    {
+        valor *= 10;
+        countDigits++;
+    }
+    return countDigits;
 }
 
 int main()
 {
-    int n, sucessor, antecessor;
-    int list[2];
-    printf("Digite um número: ");
-    scanf("%d", &n);
+    int num, algs;
 
-    antecessorSucessor(n, &sucessor, &antecessor);
-    printf("Antecessor: %d\nSucessor: %d\n", antecessor, sucessor);
+    printf("Digite um número: ");
+    scanf("%d", &num);
+
+    algs = qAlgs(num);
+
+    printf("O número %d tem %d dígitos.\n", num, algs);
 }
