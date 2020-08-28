@@ -28,23 +28,24 @@ def MMC(*args):
         list.append(num)
 
     x = 2
-    print(list)
+
     while True:
         if primo(x):
             for i in range(len(list)-1):
                 if divisivel(list[i], list[i+1], x):
                     div.append(x)
+                    print(f"{list} | {x}")
+                    time.sleep(1)
                     for i in range(len(list)):
                         if list[i] % x == 0:
                             list[i] = list[i] // x
                     x = 2
-                    print(list)
-                    time.sleep(1)
                     continue
                 else:
                     x += 1
 
             if encerrou(list):
+                print(list)
                 break
         else:
             x += 1
