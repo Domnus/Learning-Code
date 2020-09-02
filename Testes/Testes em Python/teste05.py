@@ -1,5 +1,8 @@
-frase = input("Digite uma frase: ").lower()
+from time import sleep 
 
-esarf = frase[::-1]
-
-print(f"Frase invertida: {esarf.capitalize()}")
+num = int(input("Digite uma frase: "))
+x = num
+while x > 0:
+    x //= 10
+    print(x)
+    sleep(1)
