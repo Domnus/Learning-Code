@@ -5,6 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercicio01",
+            "request": "launch",
+            "mainClass": "Exercicio01"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercício01",
+            "request": "launch",
+            "mainClass": "Exercício01"
+        },
+        {
+            "type": "java",
+            "name": "Java",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
             "name": "C Launch",
             "type": "cppdbg",
             "request": "launch",
