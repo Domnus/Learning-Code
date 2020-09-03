@@ -6,19 +6,13 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Exercicio01",
+            "name": "CodeLens (Launch) - test",
             "request": "launch",
-            "mainClass": "Exercicio01"
+            "mainClass": "test"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Exercício01",
-            "request": "launch",
-            "mainClass": "Exercício01"
-        },
-        {
-            "type": "java",
-            "name": "Java",
+            "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
         },
