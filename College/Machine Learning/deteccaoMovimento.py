@@ -21,7 +21,7 @@ while True:
 
     thresh = cv2.threshold(difference, 25, 255, cv2.THRESH_BINARY)[1]
 
-    dilate = cv2.dilate(thresh, None, iterations=2)
+    dilate = cv2.dilate(thresh, None, iterations=6)
 
     contours = cv2.findContours(dilate, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[0]  
 
