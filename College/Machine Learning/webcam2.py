@@ -8,7 +8,7 @@ restart = 0
 while True:
     ret, frame = video.read()
 
-    frame_resize = cv2.resize(frame, (500, 500))
+    frame_resize = cv2.resize(frame, (1280, 720))
 
     gray = cv2.cvtColor(frame_resize, cv2.COLOR_BGR2GRAY)
 
@@ -23,12 +23,10 @@ while True:
 
     dilate = cv2.dilate(thresh, None, iterations=2)
 
-    contours = cv2.findContours(
-        
-    dilate, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[0]
+    contours = cv2.findContours(dilate, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[0]  
 
     for c in contours:
-        if cv2.contourArea(c) < 1200:
+        if cv2.contourArea(c) < 500:
             continue
         (x, y, w, h) = cv2.boundingRect(c)
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
@@ -42,3 +40,11 @@ while True:
         break
 
     restart += 1
+
+    cv2.imshow("webcam", frame)
+    # cv2.imshow("Escala de cinza", gray)
+    # cv2.imshow("Gaussian", frame_gaussian)
+    # cv2.imshow("diff", difference)
+
+video.release()
+cv2.destroyAllWindows()
