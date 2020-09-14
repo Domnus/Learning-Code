@@ -2,7 +2,8 @@ import cv2
 
 imagem = cv2.imread('pessoas.jpg')
 
-classificador = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+classificador = cv2.CascadeClassifier(
+    "/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml")
 
 imagemcinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
 
