@@ -4,7 +4,6 @@
 from colorama import Fore
 from colorama import Style
 
-
 def multmatriz(X, Y):
     c = [0] * len(X)
     for i in range(len(X)):
