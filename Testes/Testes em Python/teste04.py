@@ -1,7 +1,6 @@
 # Bento Carlos Silva dos Santos RA: 600784
 # Fernando Cremonez Costa RA: 604097
 
-import numpy as np
 from colorama import Fore
 from colorama import Style
 
