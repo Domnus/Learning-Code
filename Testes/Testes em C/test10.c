@@ -30,6 +30,8 @@ void reset()
   senha[3] = '*';
 }
 
+char senhaCorreta[] = "1234";
+
 void setup()
 {
     pinMode(2, OUTPUT);
