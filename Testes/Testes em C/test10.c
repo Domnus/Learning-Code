@@ -2,8 +2,6 @@
 
 const byte numLin = 4;
 const byte numCol = 4;
-char senha[4] = "1234";
-char password[4];
 
 char keymap[numLin][numCol] =
     {
@@ -20,6 +18,8 @@ Keypad teclado = Keypad(makeKeymap(keymap), linPinos, colPinos, numLin, numCol);
 
 char tecla;
 
+char senhaCorreta[] = "1234";
+
 void setup()
 {
     pinMode(2, OUTPUT);
@@ -28,14 +28,31 @@ void setup()
 
 void loop()
 {
-    for (int i = 0; i < 4; i++)
+    int i;
+    char senha[4];
+    char key = teclado.getKey();
+    
+    if (key != NO_KEY)
     {
-        tecla = teclado.getKey();
-        password = password + tecla;
+        senha[i] = key;
+        Serial.print(senha);
         i++;
     }
-    if (password == senha)
+
+    if (i == 3)
     {
-        digitalWrite(2, HIGH);
+        if (senhaCorreta[0] == senha[0] && senhaCorreta[1] == senha[1] && senhaCorreta[2] == senha[2] && senhaCorreta[3] == senha[4])
+        {
+            digitalWrite(2, HIGH);
+            Serial.print("Senha Correta!");
+            delay(1000);
+        }
+        else
+        {
+            digitalWrite(2, LOW);
+            Serial.print("Senha Incorreta!");
+            delay(1000);
+        }
     }
+    Serial.print(senha);
 }
