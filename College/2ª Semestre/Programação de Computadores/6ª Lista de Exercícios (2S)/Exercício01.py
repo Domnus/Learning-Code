@@ -1,5 +1,5 @@
 def soma_nat(n):
-    print([x+1 for x in range(n)])
+    print(sum(list(range(1,n+1))))
 
 x = int(input("Digite um número: "))
 
