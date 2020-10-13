@@ -2,9 +2,12 @@ tradutor = {}
 
 
 def consulta(palavra):
-    if palavra not in tradutor:
-        return False 
-    return tradutor[palavra]
+    if tradutor == {}:
+        print("Tradutor vazio!")
+    else:
+        if palavra not in tradutor:
+            return False 
+        return tradutor[palavra]
 
 def adicionar(palavra, traducao):
     if palavra in tradutor or traducao in tradutor:
