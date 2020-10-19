@@ -3,7 +3,7 @@ tradutor = {}
 
 def consulta(palavra):
     if tradutor == {}:
-        print("Tradutor vazio!")
+       return None
     else:
         if palavra not in tradutor:
             return False 
@@ -37,7 +37,9 @@ while True:
     op = int(menu())
     if op == 1:
         x = input("Digite uma palavra para tradução: ")
-        if not consulta(x):
+        if consulta(x) == None:
+            print("Tradutor vazio!")
+        elif not consulta(x):
             print("Palavra inválida!")
         else:
             print(f"Tradução de {x}: {consulta(x)}")
