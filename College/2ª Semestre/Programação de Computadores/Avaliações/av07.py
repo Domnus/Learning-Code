@@ -108,6 +108,7 @@ def gerarPlaylistCantor(nomeCantor):
             if nomeCantor == cantor[0]:
                 playlist.append(musica)
         if playlist != []:
+            print(f"{Back.BLUE}Playlist montada com sucesso!{Style.RESET_ALL}")
             for musica in playlist:
                 print(f"{Fore.BLUE}{musica}{Style.RESET_ALL}")
         else:
