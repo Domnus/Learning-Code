@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<htmli lang="pt-br">
     <head>
 		<meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht, inicial-scale=1.0">
 		<title>Hugo doido</title>
     <head>
     <body style="background-color:lightblue;">
@@ -13,7 +14,7 @@
             <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
             <p>Things cats love:</p>
-            <ul>
+            <ul>  
                 <li>cat nip</li>
                 <li>laser pointers</li>
                 <li>lasagna</li>
