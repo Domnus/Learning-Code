@@ -34,9 +34,9 @@ div#interface{
 }
 
 header#cabecalho img#icone{
-    position: absolute;
-    left: 1560px;
-    top: 70px;
+    position: relative;
+    left: 750px;
+    top: -40px;
 }
 
 header#cabecalho {
@@ -102,7 +102,7 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 1100px;
+    left: 450px;
 }
 
 nav#menu li{
@@ -164,7 +164,7 @@ header#cabecalho-artigo h2{
     font-size: 13pt;
     color: #cecece;
     background-color: #ffffff;
-    margin: 0px;
+    margin: 0px;'
 }
 
 header#cabecalho-artigo h3{
