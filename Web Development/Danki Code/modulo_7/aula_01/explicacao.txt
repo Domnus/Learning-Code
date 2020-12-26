@@ -1,0 +1,18 @@
+procedural
+
+	define();
+	$varivael
+	func();
+
+ORIENTACAO A OBJETOS NO PHP OU OOP
+
+
+	Pessoa
+	{
+		nome
+		idade
+		peso
+
+		crescer()
+		comer()
+	}
