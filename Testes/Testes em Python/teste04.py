@@ -4,6 +4,7 @@
 from colorama import Fore
 from colorama import Style
 
+
 def multmatriz(X, Y):
     c = [0] * len(X)
     for i in range(len(X)):
@@ -11,8 +12,9 @@ def multmatriz(X, Y):
         for j in range(len(Y[0])):
             for k in range(len(Y)):
                 c[i][j] += (X[i][k] * Y[k][j])
-    
+
     return c
+
 
 def menu():
     print(f"{Fore.CYAN}-----Criptografia-----{Style.RESET_ALL}")
@@ -26,7 +28,7 @@ def menu():
 def fraseEmNumero(frase):
     M = []
     global lista
-    
+
     frase = list(frase)
 
     for i in range(len(frase)):
@@ -66,22 +68,22 @@ def criptografar(frase):
     M[0] = m[:int(half)]
     M[1] = m[int(half):]
 
-    N = multmatriz(A,M)
+    N = multmatriz(A, M)
 
     return N
 
 
 def descriptografar(n):
     global B
-    
+
     n = n.split(' ')
-    
+
     while '' in n:
         n.remove('')
 
     for i in range(len(n)):
         n[i] = int(n[i])
-        
+
     N = [[], []]
     half = len(n) / 2
     N[0] = n[:int(half)]
