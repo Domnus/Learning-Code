@@ -2,11 +2,11 @@ from os import close
 from colorama import Fore
 from colorama import Back
 from colorama import Style
-
+from random import Randint
 
 def cadastrar(nome_arquivo, participantes, c):
     try:
-        if c == 'cadastrar': 
+        if c == 'cadastrar':
             file = open(nome_arquivo, "w+")
             for name in participantes:
                 file.write(f'{name}\n')
@@ -17,8 +17,10 @@ def cadastrar(nome_arquivo, participantes, c):
         return 'Erro'
 
 
-def sortear():
-    pass
+def sortear(arquivo):
+    try:
+        with file = open(arquivo, "r"):
+             
 
 
 def listarPessoas(arquivo):
@@ -27,9 +29,9 @@ def listarPessoas(arquivo):
     print(f"{Fore.BLUE}Participantes:")
     for line in file:
         print(line[:-1])
-    
+
     print(f"{Style.RESET_ALL}")
-    file.close  
+    file.close
 
 
 def listarDuplas():
@@ -64,9 +66,14 @@ while True:
                 break
             else:
                 c = 'adicionar'
+    if op == '2':
+        nome_arquivo = input("Digite o nome do arquivo: ")
+        sortear(nome_arquivo)
     if op == '3':
         nome_arquivo = input('Digite o nome do arquivo: ')
         listarPessoas(nome_arquivo)
+    if op == '4':
+        pass
     if op == '5':
         print(f'{Fore.RED}O programa foi encerrado!{Style.RESET_ALL}')
         break
