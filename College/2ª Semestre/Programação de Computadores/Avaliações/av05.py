@@ -28,7 +28,7 @@ def menu():
           f"-> 3. Listagem\n"
           f"-> 4. Sair do Programa{Style.RESET_ALL}")
 
-    return input("Escolha a opção-> ")  
+    return input("Escolha a opção-> ")
 
 cores = []
 while True:
