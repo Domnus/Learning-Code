@@ -8,18 +8,30 @@ root = tk.Tk()
 
 root.title('Cores em RGB')
 
-cores = []
+cores = {}
 
 def inserir():
+    list = upper_frame.pack_slaves()
+    for l in list:
+        l.destroy()
+
     _cor = cor.get()
     _codigo = codigo.get()
 
-    cores.append((_cor, _codigo))
+    if _cor in cores.keys():
+        elem = tk.Label(upper_frame, text="Cor já cadastrada!")
+        elem.pack()
+    else:
+        cores[_cor] = _codigo
+
 
 def consulta():
     nomeCor = corConsulta.get()
-    v = [("True", cor[1]) for cor in cores if cor[0] == nomeCor]
-    return v
+    for x, y in cores.items():
+        if nomeCor == x:
+            return ["True", y]
+    return ["False"]
+
 
 def _consulta():
     v = consulta()
@@ -28,28 +40,25 @@ def _consulta():
     for l in list:
         l.destroy()
 
-    try:
-        if v[0][0] == "True":
-            elem = tk.Label(upper_frame, text=f"Código da cor: {v[0][1]}")
-            elem.pack()
-        else:
-            elem = tk.Label(upper_frame, text="Cor inválida!")
-            elem.pack()
-    except:
+    if v[0] == "True":
+        elem = tk.Label(upper_frame, text=f"Código da cor: {v[1]}")
+        elem.pack()
+    else:
         elem = tk.Label(upper_frame, text="Cor inválida!")
         elem.pack()
+
 
 def listagem():
     list = upper_frame.pack_slaves()
     for l in list:
         l.destroy()
 
-    if cores == []:
+    if cores == {}:
         elem = tk.Label(upper_frame, text="Lista vazia!")
         elem.pack()
     else:
-        for i in range(len(cores)):
-            elem = tk.Label(upper_frame, text=f"Cor: {cores[i][0]} | Código: {cores[i][1]}")
+        for x, y in cores.items():
+            elem = tk.Label(upper_frame, text=f"Cor: {x} | Código: {y}")
             elem.pack()
 
 
@@ -87,8 +96,7 @@ sair = tk.Button(frame, text='Sair do programa', command=quit)
 sair.pack()
 
 upper_frame = tk.Frame(root, bg='#14b6c4', bd=10)
-upper_frame.place(relx=0.5, rely=0.3, relheight=0.55,
-                  relwidth=0.75, anchor='n')
+upper_frame.place(relx=0.5, rely=0.3, relheight=0.55, relwidth=0.75, anchor='n')
 
 
 root.mainloop()
