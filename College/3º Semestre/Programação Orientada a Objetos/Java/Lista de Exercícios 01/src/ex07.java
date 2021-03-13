@@ -7,9 +7,11 @@ import java.lang.*;
 public class ex07 {
     public static void main(String[] args ) {
         String frase = "Bacharelado em Ciência da Computação";
-
-        int cont = frase.replaceAll("[\\saãeêiou]", "").length();
+        String novaFrase;
+        novaFrase = frase.replaceAll("[^aãeêiou]", "");
+        int cont = novaFrase.length();
 
         System.out.println(cont);
+        System.out.println(novaFrase);
     }
 }

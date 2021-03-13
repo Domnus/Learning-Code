@@ -6,7 +6,7 @@ public class ex08 {
     public static void main(String[] args) {
         String frase = "Bacharelado em Ciência da Computação";
 
-        frase = frase.replaceAll("[\\saãeêiou]", "");
+        frase = frase.replaceAll("[aãeêiou]", "");
 
         System.out.println(frase);
     }
